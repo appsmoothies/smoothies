@@ -42,7 +42,7 @@ const ProjectCard = ({
                 src={play}
                 alt="playstore"
                 className='w-2/3 h-2/3'
-                object-contain
+
               />
             </div>
           </div>
