@@ -20,10 +20,10 @@ const Navbar = () => {
       <div className='w-full flex justify-between
       items-center max-w-7xl mx-auto'>
         <Link
-          to="/"
+          to="/smoothies/"
           className='flex items-center gap-2'
           onClick={() => {
-            setActive("");
+            setActive("/smoothies/");
             window.scrollTo(0, 0);
           }}
         >
