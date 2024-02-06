@@ -34,7 +34,7 @@ const Tech = () => {
         <div
           className="w-28 h-28" key={technology.name}
         >
-          {isMobile ? <div className='bg-tertiary rounded-[20px] px-5 py-5
+          {isMobile ? <div className='bg-tertiary rounded-[20px] px-6 py-6
            justify-center items-center '  > <img
               className='w-16 h-16 object-contain justify-center items-center'
               src={technology.icon}

@@ -25,7 +25,7 @@ const Computers = ({ isMobile }) => {
       window.removeEventListener('resize', setDimension);
     })
   }, [screenSize])
-  console.log(screenSize.dynamicHeight);
+  console.log(screenSize.dynamicWidth);
 
   return (
     <mesh>
@@ -41,8 +41,8 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={10} />
       <primitive
         object={computer.scene}
-        // scale={screenSize.dynamicHeight * .0012 * 0.7}
-        scale={0.7}
+        scale={screenSize.dynamicWidth > 500 && screenSize.dynamicWidth < 700 ?  0.6 :screenSize.dynamicWidth<=500?0.5: 0.7}
+
         position={[0, (800 / screenSize.dynamicHeight) * -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
